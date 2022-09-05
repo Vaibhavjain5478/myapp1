@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 export default function Home({ navigation }) {
   const [asteroidId, setasteroidId] = useState("");
-  const API_KEY = "WB4KQ03NjfNtAUQqPIgfxMxJWGuht5SZKbIdNPPj";
+  const API_KEY = "gLUoZtsCjX5NDmnjgs8dKxXJFxjsyW6qzIsXaZCy";
   const url = `https://api.nasa.gov/neo/rest/v1/neo/${asteroidId}?api_key=${API_KEY}`;
   const getAsteroids = () => {
     return fetch(url)
